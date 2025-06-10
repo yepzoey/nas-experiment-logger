@@ -1,0 +1,14 @@
+# Output logs and data
+*.log
+*.xlsx
+nas_logs/
+
+# Secrets and config
+*.env
+*.json
+
+# Editor and system files
+__pycache__/
+*.pyc
+.DS_Store
+~$*
