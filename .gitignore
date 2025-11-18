@@ -6,6 +6,7 @@ nas_logs/
 # Secrets and config
 *.env
 *.json
+naslist.txt
 
 # Editor and system files
 __pycache__/
