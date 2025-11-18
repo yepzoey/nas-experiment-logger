@@ -6,7 +6,6 @@ import pandas as pd
 from pathlib import Path
 from datetime import datetime
 from dotenv import load_dotenv
-from mountnas import remount_missing_nas
 
 def is_experiment_folder_name(folder_name):
     return bool(
@@ -138,7 +137,6 @@ SERVICE_ACCOUNT_JSON= Path(os.environ["SERVICE_ACCOUNT"])
 DRIVE_FOLDER_ID     = os.environ["DRIVE_FOLDER_ID"]
 MIN_SIZE_GB         = int(os.getenv("MIN_FOLDER_GB", 500))
 
-remount_missing_nas()
 nas_mounts = get_nas_mounts_from_df()
 print(nas_mounts)
 nas_logs = {}
